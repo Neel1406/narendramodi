@@ -27,44 +27,53 @@
         </ul>
     </nav>
 
-    <main id="main-section" class="main-section">
-        <section class="main-section" id="biography">
-            <h2>Biography</h2>
-            <blockquote id="bio">
-                <p><strong>Narendra Damodardas Modi</strong>, born on 17 September 1950, is an Indian politician who has served as the 14th prime minister of India since May 2014. Modi was the chief minister of Gujarat from 2001 to 2014 and is the Member of Parliament (MP) for Varanasi. He is a member of the <em><u>Bharatiya Janata Party (BJP)</u></em> and of the <em><u>Rashtriya Swayamsevak Sangh (RSS)</u></em>, a right wing Hindu nationalist paramilitary volunteer organisation. He is the longest-serving prime minister from outside the Indian National Congress.</p><br>
-                <cite>- Wikepideia</cite>
-            </blockquote>
-        </section>
+    <main id="main-section">
+        <form name="contact" id="contact" method="post" action="contact.php">
+            
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required autofocus placeholder="Your Full Name">
+            </div>    
 
-        <section class="main-section-figure" id="images">
-            <h2>Images</h2>
-            <!--
-            Absolute Path Image ->
-            <figure class="image" id="absolute-path-image">
-                <img src="https://th.bing.com/th/id/OIP.PT1WO-SwopebduBu_LIlAgAAAA?rs=1&pid=ImgDetMain" alt="Narendra Modi is Smiling">
-                <figcaption>Narendra Modi</figcaption>
-            </figure> 
-            -->
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Your Email Address">
+            </div>
+                
+            <div>
+                <label for="birthdate">Birth Date:</label>
+                <input type="date" id="birthdate" name="birthdate">
+            </div>    
+                
+            <div>
+                <label for="phone">Phone No.</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber">
+            </div>
+                
+            <div>    
+                <label for="reason">Reason for Contacting:</label>
+                <select id="reason" name="reason">
+                    <option selected>Select a Reason</option>
+                    <option value="inquiry">General Inquiry</option>
+                    <option value="feedback">Feedback</option>
+                </select>
+            </div>  
 
-            <!-- Relative Path Image -->
-            <figure class="image" id="relative-path-image">
-                <img src="image/modi-black-mr.jpg" alt="Narendra Modi in Black Suit">
-                <figcaption>Narendra Modi In Black Suit</figcaption>
-            </figure>
-        </section>
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Your Message"></textarea>
+            </div>
 
-        <section class="main-section" id="quotes">
-            <h2>Quotes</h2>
-            <blockquote id="quote">
-                <q>India is not just a country, it is an emotion, it is a feeling.</q><br>
-                <cite>- Narendra Modi, March 2019<br></cite>
-            </blockquote>
-        </section>
+            <div>
+                <label for="robot">I am not a Robot</label>
+                <input type="checkbox" id="not-robot" name="not-robot">
+            </div>
 
-        <section class="main-section" id="video">
-            <h2>Media</h2>
-            <iframe src="https://youtube.be/embed/KEx6Fe2TJSo?si=A5SFIVqQSh8B7k5G" title="YouTube video player" frameborder="2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </section>
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+            
+        </form>
     </main>
 
     <aside id="side-section">
@@ -96,7 +105,7 @@
                 <tr>
                     <th>Previous Position</th>
                     <td>Chief Minister of Gujarat</td>
-                </tr>
+                </tr>    
                 </tbody>
 
             </table>
@@ -110,6 +119,7 @@
                 <li><a href="https://www.clearias.com/atmanirbhar-bharat-abhiyan/" target="_blank">Atmanirbhar Bharat</a></li>
             </ul>
         </section>
+
     </aside>
 
     <footer id="clear-element">
